@@ -72,7 +72,7 @@ function [labels, projU] = spikeSort(spikes, varargin)
     addParameter(p,'maxIter', defaultmaxIter, @isnumeric);
     addParameter(p,'minSampleSize',defaultminSampleSize, @isnumeric);
     addParameter(p,'SampIter',defaultSampIter, @isnumeric);
-    addParameter(p,'isnumeric', defaultminClusSize, @isnumeric);
+    addParameter(p,'minClusSize', defaultminClusSize, @isnumeric);
     addParameter(p,'earlyStop', defaultearlyStop, @islogical);
     addParameter(p,'doPlot', true, @islogical);
     
